@@ -19,50 +19,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="68" id="pRh-39-piC" customClass="BooksTableViewCell" customModule="ListGoogleBooks" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="68" id="ARl-RI-DXS" customClass="BooksTableViewCell" customModule="ListGoogleBooks" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pRh-39-piC" id="hpC-pV-m4X">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARl-RI-DXS" id="H9n-2a-vwG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Title" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33n-aX-jfM">
-                                            <rect key="frame" x="98" y="11" width="37" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Title" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ata-69-eLi">
+                                            <rect key="frame" x="104" y="11" width="37" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-kK-puX">
-                                            <rect key="frame" x="98" y="33" width="67" height="22"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="67" id="XeE-97-npz"/>
-                                            </constraints>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWR-Qt-eD4">
+                                            <rect key="frame" x="105" y="33" width="55" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLP-p5-lu2">
-                                            <rect key="frame" x="16" y="0.0" width="74" height="57"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WBS-tE-ypB">
+                                            <rect key="frame" x="16" y="0.0" width="80" height="57"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="33n-aX-jfM" firstAttribute="top" secondItem="hpC-pV-m4X" secondAttribute="topMargin" id="6Wt-dk-Jjl"/>
-                                        <constraint firstItem="bUs-kK-puX" firstAttribute="top" secondItem="33n-aX-jfM" secondAttribute="bottom" constant="6" id="A7h-oF-2Va"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bUs-kK-puX" secondAttribute="trailing" constant="20" symbolic="YES" id="BQ4-gX-EPR"/>
-                                        <constraint firstItem="bUs-kK-puX" firstAttribute="leading" secondItem="aLP-p5-lu2" secondAttribute="trailing" constant="8" symbolic="YES" id="EFQ-m8-RBV"/>
-                                        <constraint firstItem="33n-aX-jfM" firstAttribute="leading" secondItem="hpC-pV-m4X" secondAttribute="leadingMargin" constant="82" id="KBz-aX-6XR"/>
-                                        <constraint firstItem="aLP-p5-lu2" firstAttribute="bottom" secondItem="hpC-pV-m4X" secondAttribute="bottomMargin" id="UU1-6s-jDc"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="33n-aX-jfM" secondAttribute="trailing" id="ahY-TH-c2S"/>
-                                        <constraint firstItem="aLP-p5-lu2" firstAttribute="leading" secondItem="hpC-pV-m4X" secondAttribute="leadingMargin" id="luI-lJ-8KX"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="bUs-kK-puX" secondAttribute="bottom" constant="2.5" id="mgV-Xr-q5z"/>
-                                        <constraint firstItem="bUs-kK-puX" firstAttribute="leading" secondItem="33n-aX-jfM" secondAttribute="leading" id="tH1-in-nPN"/>
-                                        <constraint firstItem="aLP-p5-lu2" firstAttribute="top" secondItem="hpC-pV-m4X" secondAttribute="top" id="xp4-7Z-UY3"/>
+                                        <constraint firstItem="WBS-tE-ypB" firstAttribute="bottom" secondItem="H9n-2a-vwG" secondAttribute="bottomMargin" id="Bbh-Fw-rFz"/>
+                                        <constraint firstItem="ata-69-eLi" firstAttribute="leading" secondItem="H9n-2a-vwG" secondAttribute="leadingMargin" constant="88" id="Jir-mJ-Gyc"/>
+                                        <constraint firstItem="pWR-Qt-eD4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ata-69-eLi" secondAttribute="leading" id="Rbl-q7-Yla"/>
+                                        <constraint firstItem="WBS-tE-ypB" firstAttribute="leading" secondItem="H9n-2a-vwG" secondAttribute="leadingMargin" id="VPD-tj-EOx"/>
+                                        <constraint firstItem="pWR-Qt-eD4" firstAttribute="leading" secondItem="H9n-2a-vwG" secondAttribute="leadingMargin" constant="89" id="W10-or-Doi"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pWR-Qt-eD4" secondAttribute="trailing" id="Z1T-Kt-asy"/>
+                                        <constraint firstItem="pWR-Qt-eD4" firstAttribute="top" secondItem="ata-69-eLi" secondAttribute="bottom" constant="6" id="ZJV-gL-0qp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pWR-Qt-eD4" secondAttribute="bottom" constant="2.5" id="ZiW-o8-4CY"/>
+                                        <constraint firstItem="WBS-tE-ypB" firstAttribute="top" secondItem="H9n-2a-vwG" secondAttribute="top" id="oxf-F7-4xi"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ata-69-eLi" secondAttribute="trailing" constant="20" symbolic="YES" id="rNV-vB-hFk"/>
+                                        <constraint firstItem="ata-69-eLi" firstAttribute="top" secondItem="H9n-2a-vwG" secondAttribute="topMargin" id="sTK-g5-euW"/>
+                                        <constraint firstItem="ata-69-eLi" firstAttribute="leading" secondItem="WBS-tE-ypB" secondAttribute="trailing" constant="8" symbolic="YES" id="xYl-Kk-WDG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bookAuthor" destination="bUs-kK-puX" id="tdM-Q5-XwB"/>
-                                    <outlet property="bookThumbnailImage" destination="aLP-p5-lu2" id="WM9-Ow-gjF"/>
-                                    <outlet property="bookTitle" destination="33n-aX-jfM" id="HRp-QN-PQl"/>
+                                    <outlet property="bookAuthor" destination="pWR-Qt-eD4" id="xWZ-mI-bbD"/>
+                                    <outlet property="bookThumbnailImage" destination="WBS-tE-ypB" id="4PD-qo-Mu0"/>
+                                    <outlet property="bookTitle" destination="ata-69-eLi" id="5Xc-gY-i3c"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
