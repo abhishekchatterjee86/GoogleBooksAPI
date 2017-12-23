@@ -13,6 +13,7 @@
 		9CEF29661FEE46E000DDCBD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF29651FEE46E000DDCBD1 /* Assets.xcassets */; };
 		9CEF29691FEE46E000DDCBD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CEF29671FEE46E000DDCBD1 /* LaunchScreen.storyboard */; };
 		9CEF29711FEE491D00DDCBD1 /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF29701FEE491D00DDCBD1 /* BooksTableViewCell.swift */; };
+		9CEF29741FEE4E1D00DDCBD1 /* GoogleBooksClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF29731FEE4E1D00DDCBD1 /* GoogleBooksClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9CEF29681FEE46E000DDCBD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CEF296A1FEE46E000DDCBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CEF29701FEE491D00DDCBD1 /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
+		9CEF29731FEE4E1D00DDCBD1 /* GoogleBooksClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9CEF295D1FEE46E000DDCBD1 /* ListGoogleBooks */ = {
 			isa = PBXGroup;
 			children = (
+				9CEF29721FEE4DE100DDCBD1 /* Network */,
 				9CEF295E1FEE46E000DDCBD1 /* AppDelegate.swift */,
 				9CEF29601FEE46E000DDCBD1 /* ViewController.swift */,
 				9CEF29701FEE491D00DDCBD1 /* BooksTableViewCell.swift */,
@@ -65,6 +68,14 @@
 				9CEF296A1FEE46E000DDCBD1 /* Info.plist */,
 			);
 			path = ListGoogleBooks;
+			sourceTree = "<group>";
+		};
+		9CEF29721FEE4DE100DDCBD1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9CEF29731FEE4E1D00DDCBD1 /* GoogleBooksClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEF29741FEE4E1D00DDCBD1 /* GoogleBooksClient.swift in Sources */,
 				9CEF29711FEE491D00DDCBD1 /* BooksTableViewCell.swift in Sources */,
 				9CEF29611FEE46E000DDCBD1 /* ViewController.swift in Sources */,
 				9CEF295F1FEE46E000DDCBD1 /* AppDelegate.swift in Sources */,
