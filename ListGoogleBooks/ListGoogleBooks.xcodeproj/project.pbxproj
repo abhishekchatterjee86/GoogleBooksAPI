@@ -17,6 +17,9 @@
 		9CEF29791FEE57D200DDCBD1 /* GoogleBooksFetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF29781FEE57D200DDCBD1 /* GoogleBooksFetchRequest.swift */; };
 		9CEF297C1FEE580A00DDCBD1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF297B1FEE580A00DDCBD1 /* Book.swift */; };
 		9CEF29801FEE595A00DDCBD1 /* URLRequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF297F1FEE595A00DDCBD1 /* URLRequestExtension.swift */; };
+		9CEF29821FEE605500DDCBD1 /* GoogleBooksApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF29811FEE605500DDCBD1 /* GoogleBooksApiClient.swift */; };
+		9CEF29841FEE606700DDCBD1 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF29831FEE606700DDCBD1 /* Either.swift */; };
+		9CEF29871FEE610900DDCBD1 /* VolumeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEF29861FEE610900DDCBD1 /* VolumeJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		9CEF29781FEE57D200DDCBD1 /* GoogleBooksFetchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBooksFetchRequest.swift; sourceTree = "<group>"; };
 		9CEF297B1FEE580A00DDCBD1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		9CEF297F1FEE595A00DDCBD1 /* URLRequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExtension.swift; sourceTree = "<group>"; };
+		9CEF29811FEE605500DDCBD1 /* GoogleBooksApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleBooksApiClient.swift; sourceTree = "<group>"; };
+		9CEF29831FEE606700DDCBD1 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		9CEF29861FEE610900DDCBD1 /* VolumeJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		9CEF295D1FEE46E000DDCBD1 /* ListGoogleBooks */ = {
 			isa = PBXGroup;
 			children = (
+				9CEF29851FEE60F600DDCBD1 /* JSON */,
 				9CEF297A1FEE57E700DDCBD1 /* Model */,
 				9CEF29721FEE4DE100DDCBD1 /* Network */,
 				9CEF295E1FEE46E000DDCBD1 /* AppDelegate.swift */,
@@ -83,6 +90,8 @@
 				9CEF29731FEE4E1D00DDCBD1 /* GoogleBooksClient.swift */,
 				9CEF29781FEE57D200DDCBD1 /* GoogleBooksFetchRequest.swift */,
 				9CEF297F1FEE595A00DDCBD1 /* URLRequestExtension.swift */,
+				9CEF29811FEE605500DDCBD1 /* GoogleBooksApiClient.swift */,
+				9CEF29831FEE606700DDCBD1 /* Either.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -93,6 +102,14 @@
 				9CEF297B1FEE580A00DDCBD1 /* Book.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9CEF29851FEE60F600DDCBD1 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9CEF29861FEE610900DDCBD1 /* VolumeJson.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CEF29741FEE4E1D00DDCBD1 /* GoogleBooksClient.swift in Sources */,
+				9CEF29821FEE605500DDCBD1 /* GoogleBooksApiClient.swift in Sources */,
 				9CEF29711FEE491D00DDCBD1 /* BooksTableViewCell.swift in Sources */,
 				9CEF297C1FEE580A00DDCBD1 /* Book.swift in Sources */,
 				9CEF29611FEE46E000DDCBD1 /* ViewController.swift in Sources */,
+				9CEF29871FEE610900DDCBD1 /* VolumeJson.swift in Sources */,
 				9CEF29801FEE595A00DDCBD1 /* URLRequestExtension.swift in Sources */,
 				9CEF295F1FEE46E000DDCBD1 /* AppDelegate.swift in Sources */,
+				9CEF29841FEE606700DDCBD1 /* Either.swift in Sources */,
 				9CEF29791FEE57D200DDCBD1 /* GoogleBooksFetchRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
